@@ -1,0 +1,348 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #f3fde8;
+  /* min-height: 400vh; */
+  animation: kbeh-animation 0 0.5s ease-in;
+}
+
+@keyframes kbeh-animation {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+:root {
+  --primary-color: #f3fde8;
+  --nganu-color:#ddf2d1e2;
+  --secondary-color: #a8df80;
+  --tiga-color: #ffbfbf;
+  --empat-color: #ffe5e5;
+}
+
+p {
+  color: black;
+  font-size: 2.5vh;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.logo {
+  border-radius: 10px;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #007bff; /* Warna biru */
+  font-size: 24px;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.navbar-t oggler-icon {
+  background-color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  margin-right: 20px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url(/Untitled255-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #ffffff 3%, rgba(255, 254, 254, 0) 25%);
+}
+
+.hero-a {
+  background-image: url("your-hero-background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--primary-color);
+  padding: 100px 0;
+  text-align: center;
+  padding-bottom: 100px;
+ 
+}
+
+.hero-a p {
+  font-size: 1.2rem;
+  margin-top: 35px;
+}
+
+.title-page {
+  font-family: "Kanit", sans-serif; /* Mengganti font */
+  font-size: 3rem;
+  font-weight: bold;
+  
+  margin-top: 35px;
+}
+
+.btn-primary {
+  background-color: var(--secondary-color);
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* card */
+.cardcontent {
+  padding: 50px 0;
+  margin-top: 100px;
+  margin-bottom: 20vh;
+  padding-bottom: 15vh;
+  padding-top: 15vh;
+  background-color: var(--nganu-color);
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s;
+  background-color: #f3fde8;
+  animation: card-ani 1.5s ease-in;
+}
+
+@keyframes card-ani {
+  0% {
+    
+    opacity: 0%;
+  }
+  100% {
+    
+    opacity: 100%;
+  }
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.h-100{
+  background-color: #ddebb7;
+}
+
+/* moment */
+.menu {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #ff688e;
+  padding: 20px;
+  padding-bottom: 100px;
+  animation: card-ani2 2.5s ease-in;
+}
+
+@keyframes card-ani2 {
+  0% {
+    
+    opacity: 0%;
+  }
+  100% {
+    
+    opacity: 100%;
+  }
+}
+
+.gambarMoment {
+  text-align: center;
+  margin: 50px 0;
+  margin-bottom: 40vh;
+  padding-bottom: 100px; 
+  animation: card-ani3 1.5s ease-in;
+}
+
+@keyframes card-ani3{
+  0%{
+   
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+
+.momentum img {
+  min-width: 75%;
+  height: auto;
+  margin: 10px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s;
+}
+
+
+
+.momentum img:hover {
+  transform: scale(1.05);
+  border: 2px  solid #ffff ;
+  box-shadow: 0 0 10px 0 rgba(82, 255, 2, 0.8);
+}
+
+.feather {
+  width: 70px;
+  height: 70px;
+  margin: 30px;
+  margin-left: 100px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.menu-contact{
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #00ffbb;
+  padding: 20px;
+  padding-bottom: 100px;
+  animation: card-ani2 2.5s ease-in;  
+  
+}
+
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  bottom: -100px;
+  left: 0;
+  /* background-color: hsl(0, 0%, 0%); */
+  padding-bottom: 10vh;
+  padding-top: 10vh;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.suku{
+  text-decoration: none;
+  font-style: none;
+  color: #ffbfbf;
+  font-size: large;
+}
+
+.suku a:hover{
+  transform: scale(50px);
+}
+
+/* tentang */
+
+.vision {
+  display: flex;
+  margin-bottom: 30vh;
+}
+
+.judul-tentang{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tentang-p{
+  text-align:center;
+  margin: 40px 40px ;
+  padding-left: 90px ;
+}
+
+.leader-section{
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50vh;
+  margin-bottom: 400px;
+}
+
+/* var dar theme  */
+
+@media (max-width: 768px) {
+  .title-page {
+    font-size: 2rem;
+  }
+
+  .menu {
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .btn-primary {
+    font-size: 16px;
+  }
+
+  footer ul li {
+    font-size: 14px;
+  }
+}
