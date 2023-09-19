@@ -1,10 +1,20 @@
 * {
   font-family: "Poppins", sans-serif;
+  /* margin: 0;
+  padding: 0; */
 }
+html, body{
+  /* margin: 0;
+  padding: 0; */
+  overflow-x: hidden;
+}
+
 body {
   background-color: #f3fde8;
   /* min-height: 400vh; */
   animation: kbeh-animation 0 0.5s ease-in;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 @keyframes kbeh-animation {
@@ -124,6 +134,23 @@ p {
   transition: background-color 0.3s;
 }
 
+
+.hero-a-2{
+    background-image: url("your-hero-background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--primary-color);
+  padding: 100px 0;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.hero-a-2 p {
+  font-size: 1.2rem;
+  margin-top: 35px;
+}
+
+
 /* card */
 .cardcontent {
   padding: 50px 0;
@@ -131,7 +158,16 @@ p {
   margin-bottom: 20vh;
   padding-bottom: 15vh;
   padding-top: 15vh;
-  background-color: var(--nganu-color);
+  background-color: var(--nganu-color); 
+  /* flex-flow: row wrap; */
+  
+}
+
+.qanjud{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .card {
@@ -139,6 +175,7 @@ p {
   transition: transform 0.3s;
   background-color: #f3fde8;
   animation: card-ani 1.5s ease-in;
+  /* padding: 20px; */
 }
 
 @keyframes card-ani {
@@ -232,11 +269,14 @@ p {
   box-shadow: 0 0 10px 0 rgba(82, 255, 2, 0.8);
 }
 
+
+
+/* tentang */
 .feather {
   width: 70px;
   height: 70px;
   margin: 30px;
-  margin-left: 100px;
+  /* margin-left: 100px; */
   stroke: currentColor;
   stroke-width: 2;
   stroke-linecap: round;
@@ -245,26 +285,12 @@ p {
 }
 
 .menu-contact{
-  margin-bottom: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  font-family: "Montserrat", sans-serif;
-  color: #00ffbb;
-  padding: 20px;
-  padding-bottom: 100px;
-  animation: card-ani2 2.5s ease-in;  
-  
+text-align: center;
 }
 
 
+
 .contact-icon {
-  display: flex;
-  align-items: center;
-  padding-top: 30px;
-  bottom: -100px;
-  left: 0;
   /* background-color: hsl(0, 0%, 0%); */
   padding-bottom: 10vh;
   padding-top: 10vh;
@@ -280,48 +306,148 @@ footer ul li {
   display: inline;
   margin-right: 20px;
   font-size: 16px;
+  text-decoration: none;
+}
+
+.f-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .suku{
-  text-decoration: none;
-  font-style: none;
-  color: #ffbfbf;
-  font-size: large;
+  text-decoration:none; 
 }
-
-.suku a:hover{
-  transform: scale(50px);
-}
-
-/* tentang */
 
 .vision {
   display: flex;
-  margin-bottom: 30vh;
+  align-items: center;
+  justify-content: center;
+   padding:35vh 10vh 35vh;
+
 }
 
 .judul-tentang{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
+  display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .tentang-p{
-  text-align:center;
-  margin: 40px 40px ;
-  padding-left: 90px ;
+  text-align: center;
+  padd
 }
 
-.leader-section{
-  display: flex ;
+.l-container{
+  display:flex;
+}
+.card3{
+ 
+  padding-top: 50vh;
+  padding-bottom: 50vh;
+
+}
+
+.c-container{
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 50vh;
-  margin-bottom: 400px;
+
 }
+
+.card33{
+  background-color: #ffbfbf;
+}
+
+
+body { 
+  background-color: #eef7ff;
+ }
+
+/* center the blockquote in the page */
+.blockquote-wrapper {
+   display: flex;
+   height: 100vh;
+   padding: 0 20px;
+}
+
+/* Blockquote main style */
+.blockquote {
+    position: relative;
+    font-family: 'Barlow Condensed', sans-serif;
+    max-width: 620px;
+    margin: 80px auto;
+    align-self: center;
+}
+
+/* Blockquote header */
+.blockquote h1 {
+    font-family: 'Abril Fatface', cursive;
+    position: relative; /* for pseudos */
+    color: #e74848;
+    font-size: 2.8rem;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    border: 2px solid #060505d1;
+    border: solid 2px;
+    border-radius:20px;
+    padding: 25px;
+}
+
+/* Blockquote right double quotes */
+.blockquote h1:after {
+    content:"";
+    position: absolute;
+    border: 2px solid #e74848;
+    border-radius: 0 50px 0 0;
+    width: 60px;
+    height: 60px;
+    bottom: -62px;
+    left: 50px;
+    border-bottom: none;
+    border-left: none;
+    z-index: 3; 
+}
+
+.blockquote h1:before {
+    content:"";
+    position: absolute;
+    width: 80px;
+    border: 6px solid #292a2b;
+    bottom: -3px;
+    left: 50px;
+    z-index: 2;
+}
+
+/* increase header size after 600px */
+@media all and (min-width: 600px) {
+    .blockquote h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+   }
+
+}
+
+/* Blockquote subheader */
+.blockquote h4 {
+    position: relative;
+    color: #000000b5;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 1;
+    margin-left:150px;
+    padding-left:12px;
+}
+
+ 
+.blockquote h4:first-letter {
+  margin-left:-12px;
+}
+
 
 /* var dar theme  */
 
@@ -345,4 +471,21 @@ footer ul li {
   footer ul li {
     font-size: 14px;
   }
+
+  .carousel-inner{
+    font-size: 3rem;
+    top: 9vh;
+  }
+
+  .navbar{
+    padding-bottom: 0;
+  }
+
+  .vision{
+    padding-top:50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+
 }
