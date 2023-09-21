@@ -498,5 +498,20 @@ body {
     padding-right: 50px;
   }
 
+  /* .contact-icon, .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .contag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .suku{
+    text-align: center;
+  }
+
 
 }
