@@ -583,92 +583,79 @@ footer ul li {
   margin-right: 85vh;
   margin-bottom: 9.1vh;
 }
-
-.card-m-container{
-  margin-left: 30vh;
-}
-
-.card-m-main{
+.menu-container-u{
   display: flex;
-  left: 10vh;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
 }
 
-.flip-card {
-  background-color: transparent;
-  width: 10px;
-  height:400px;
-  perspective: 1000px;
-  font-family: sans-serif;
-  width: calc(33.33% - 10px);  /*33.33% agar ada 3 elemen per baris, -10px untuk margin*/
-  margin: 5px; 
+/* Style card-slider container */
+.card-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    max-width: 486px;
+    margin: 0 auto;
+    /* background-color: rgba(59, 130, 246, 0.5); */
+   
 }
 
-.title {
-  font-size: 1.5em;
-  font-weight: 900;
-  text-align: center;
-  margin: 0;
-}
-.desk{
-  font-size: 0.9em;
+/* Style individual card */
+.card-m {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 16px;
 }
 
-.flip-card-inner {
+.card-m img {
+    width: 80%;
+    height: auto;
+    position: relative;
+    align-items: center;
+}
+
+.gambar-cd{
   position: relative;
-  width: 250px;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+  justify-content: center;
 }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+.card-content {
+    padding: 16px;
 }
 
-.flip-card-front, .flip-card-back {
-  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
-  position: absolute;
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card-description {
+    font-size: 16px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+  .card{
+
+    padding: 10px;
+
+  }
+
+  .menu-container-u{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border: 1px solid coral;
-  border-radius: 1rem;
-}
-
-.flip-card-front {
-  background: linear-gradient(120deg, rgb(199, 132, 51) 60%, rgb(161, 91, 0) 88%,
-     rgb(255, 170, 79) 40%, rgb(187, 118, 0) 48%);
-  color: rgb(241, 121, 0);
-}
-
-.flip-card-back {
-  background: linear-gradient(120deg, rgb(213, 150, 67) 30%, rgb(179, 119, 0) 88%,
-     #6b3d00 40%, rgb(181, 102, 0) 78%);
-  color: rgb(255, 162, 0);
-  transform: rotateY(180deg);
-}
-
-.gambar{
-  border-radius:10px;
-}
-
-.flip-card-front{
   align-items: center;
-  justify-content: center;
-  align-content: space-between;
 }
-.gambar{
-  width: 190px;
-  height: 200px;
+
+.mak, .min{
+  padding-bottom: 30vh ;
 }
+}
+
 
 
 /* var dar theme  */
