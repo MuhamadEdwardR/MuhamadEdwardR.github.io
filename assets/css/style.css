@@ -375,6 +375,8 @@ footer ul li {
 }
 
 
+
+
 .card3{
  
   padding-top: 50vh;
@@ -386,42 +388,54 @@ footer ul li {
   align-items: center;
   justify-content: space-evenly;
   /* right: 50vh; */
-  position: relative;
+  /* position: relative; */
   margin-bottom: 20vh;
+  top: 50vh;
 }
 
 .cardsl{
+ position: relative;
  display: flex;
- justify-content: center;
- align-items: center;
+ justify-content: space-between;
+ right: 25vh;
 }
 
 
 .cardl {
   width: 350px;
   height: 565px;
+  margin: 40px;
   border-radius: 20px;
   background: #512600e3;
+  /* padding: 50px; */
   transition-duration:0.5s ;
-  animation: cardl 0.1s infinite ease-in-out;
+  animation: cardl 1s infinite ease-out;
   transform-origin: center ;
 }
-@keyframes cardl {
+@keyframes cardls {
   0% {
       transform: rotate(0deg);
       background-color: blue;
     }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(3600deg);
     background-color: red;
   }
 }
 
 
 .cardl:hover{
-   box-shadow: 15px 15px 30px #e6e6e6,
-             -15px -15px 30px #ffffff;
+   box-shadow: 15px 15px 30px #903700,
+             -15px -15px 30px #ff6f00;
 }
+
+.judul-leader{
+  text-align: center;
+  position: relative;
+  left: 57vh;
+  bottom: 50vh;
+}
+
 
 .contentl{
   position: relative;
@@ -447,15 +461,31 @@ footer ul li {
 }
 @media (max-width: 768px) {
   .cardl{
-    width: 60%;
+    width: 75%;
     height: auto;
     margin-bottom: 10vh;
 
   }
 
-  .lead-container{
+  .cardsl{
+    right: 20vh;
     flex-direction: column;
+    margin-right: 15vh;
+    left: 0;
   }
+
+  .judul-leader{
+    bottom: 80vh;
+    right: 0vh;
+    position: relative;
+    left: 26.1vh;
+    text-align: center;
+
+
+  }
+
+
+ 
 }
 
 /*Text*/
