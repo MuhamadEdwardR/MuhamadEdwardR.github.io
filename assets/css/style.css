@@ -385,85 +385,83 @@ footer ul li {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  right: 50vh;
+  /* right: 50vh; */
   position: relative;
   margin-bottom: 20vh;
 }
 
-.card-2 {
-  color: #1b1b1b;
-  width: 290px;
-  height: 454px;
-  position: relative;
-  outline: 6px solid #f5f5f5;
-  border-radius: 8px;
-  line-height: 150%;
-  padding: 16px;
-  background: #edd7bd;
-  background-blend-mode: multiply;
-  background: linear-gradient(to top, #eba1bc, #ff945e);
-  transition: background-color 1s ease-in-out;
-  overflow: hidden;
-  left: 50vh;
-   /* width: 100%; */
-  max-width: 768px;
-  margin: 10px;
+.cardsl{
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
-.img-lead{
-  border-radius: 10px;
-  /* display: flex; */
-  position: relative;
-  bottom: 4vh;
 
+.cardl {
+  width: 350px;
+  height: 565px;
+  border-radius: 20px;
+  background: #512600e3;
+  transition-duration:0.5s ;
+  animation: cardl 0.1s infinite ease-in-out;
+  transform-origin: center ;
+}
+@keyframes cardl {
+  0% {
+      transform: rotate(0deg);
+      background-color: blue;
+    }
+  100% {
+    transform: rotate(360deg);
+    background-color: red;
+  }
 }
 
-.card-front {
-  bottom: 16px;
-  left: 0;
-  position: absolute;
-  width: 100%;
+
+.cardl:hover{
+   box-shadow: 15px 15px 30px #e6e6e6,
+             -15px -15px 30px #ffffff;
+}
+
+.contentl{
+  position: relative;
   text-align: center;
-  transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  top: 1vh;
+  
 }
 
-.card-back {
-  transform: translateX(120%);
-  transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+.card-imeg{
+  width: 70%;
+ /* flex-direction:row; */
+  top: 1.5em;
+  position: relative;
+  border-radius: 10px;
+  align-items: self-start;
+  margin-bottom: 2.5vh ;
 }
 
+.card-titll, .card-deskl{
+  position: relative;
+  align-items: end;
+  /* top: 1vh; */
+}
+@media (max-width: 768px) {
+  .cardl{
+    width: 60%;
+    height: auto;
+    margin-bottom: 10vh;
+
+  }
+
+  .lead-container{
+    flex-direction: column;
+  }
+}
 
 /*Text*/
-.title {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-/*Text divider*/
-.title::after {
-  content: "";
-  display: block;
-  width: 50%;
-  border-radius: 50%;
-  height: 2px;
-  margin: 2px auto;
-  background-color: #ffffff;
-}
 
 
 /*Hover*/
-.card-2:hover {
-  background-color: #1b1b1b25;
-}
-
-.card-2:hover .card-front {
-  transform: translateX(-100%);
-}
-
-.card-2:hover .card-back {
-  transform: translateX(0);
-}
-
-
 
 
 .c-container{
