@@ -44,7 +44,7 @@ p {
 
 /* Navbar Styles */
 .navbar {
-  background-color: #b2752b;
+  background-color: #efa74f;
   border-bottom: 1px solid #000000;
   padding: 10px 0;
 }
@@ -286,14 +286,16 @@ p {
   margin: 10px;
   border: 2px solid #000000;
   border-radius: 10px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
-  transition: transform 0.3s;
+  box-shadow: 0 0 10px 0 rgba(27, 27, 27, 0.8);
+  transition-duration: 1s;
+  
 }
 
 
 
+
 .momentum img:hover {
-  transform: scale(1.05);
+  transform: scale(1);
   border: 2px  solid #6f5b24 ;
   box-shadow: 0 0 10px 0 rgb(255, 194, 63);
 }
@@ -406,7 +408,7 @@ footer ul li {
   height: 565px;
   margin: 40px;
   border-radius: 20px;
-  background: #512600e3;
+  background: #38220f;
   /* padding: 50px; */
   transition-duration:0.5s ;
   animation: cardl 1s infinite ease-out;
@@ -434,6 +436,7 @@ footer ul li {
   position: relative;
   left: 57vh;
   bottom: 50vh;
+  
 }
 
 
@@ -608,7 +611,7 @@ footer ul li {
   text-align: left;
   position: relative;
   margin-left:25vh ;
-  margin-right: 85vh;
+  margin-right: 65vh;
   margin-bottom: 9.1vh;
 }
 .menu-container-u{
@@ -618,7 +621,7 @@ footer ul li {
 }
 
 /* Style card-slider container */
-.card-slider {
+.card-slider {  
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -638,12 +641,23 @@ footer ul li {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-right: 16px;
 }
+#card-slider-1 {
+
+  /* Menambahkan animasi ke slider */
+  transition: 0.5s;
+}
+
+
 
 .card-m img {
-    width: 80%;
+    width: 85%;
     height: auto;
     position: relative;
-    align-items: center;
+    left: 4vh;
+    display: flex;
+    border-radius: 10px;
+    top:10px;
+    
 }
 
 .gambar-cd{
@@ -653,6 +667,7 @@ footer ul li {
 
 .card-content {
     padding: 16px;
+
 }
 
 .card-title {
