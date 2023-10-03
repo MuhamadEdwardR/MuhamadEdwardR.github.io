@@ -262,6 +262,13 @@ p {
   }
 }
 
+
+.kok{
+  align-items: flex-start;
+}
+
+
+
 .gambarMoment {
   text-align: center;
   margin: 50px 0;
